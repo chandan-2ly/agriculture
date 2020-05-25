@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
@@ -21,13 +21,14 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TransitionsModal(data) {
   const classes = useStyles();
-  console.log("props", data);
+  console.log("props", data.graphData);
+
   const dummyData = [
-    ["Year", "Area", "Production", "Yeild"],
-    ["2014", 1000, 400, 200],
-    ["2015", 1170, 460, 250],
-    ["2016", 660, 1120, 300],
-    ["2017", 1030, 540, 350],
+    ["Year", "Yeild"],
+    ["2014", 1000],
+    ["2015", 1170],
+    ["2016", 660],
+    ["2017", 1030],
   ];
   console.log(data);
 
@@ -55,18 +56,12 @@ export default function TransitionsModal(data) {
             height={"300px"}
             chartType="Bar"
             loader={<div>Loading Chart</div>}
-            data={[
-              ["Year", "Area", "Production", "Yeild"],
-              ["2014", 1000, 400, 200],
-              ["2015", 1170, 460, 250],
-              ["2016", 660, 1120, 300],
-              ["2017", 1030, 540, 350],
-            ]}
+            data={data.graphData}
             options={{
               // Material design options
               chart: {
-                title: "Company Performance",
-                subtitle: "Sales, Expenses, and Profit: 2014-2017",
+                title: "Crop historic data",
+                subtitle: "",
               },
             }}
           />

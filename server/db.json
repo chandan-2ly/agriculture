@@ -1,9 +1,483 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
-  }
+  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
+  "Bangalore": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Bareilly": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Bhatinda": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Coimbatore": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Dehradun": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Guwahati": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Jabalpur": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Jammu": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Kolkata": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Mangalore": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Mysore": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Panjim": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "PortBlair": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Pune": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Rajkot": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Ranchi": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Shimla": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Srinagar": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Thiruvananthapuram": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ],
+  "Varanasi": [
+    {
+      "id": 1,
+      "crop": "Potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    }
+  ]
+}

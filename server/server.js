@@ -10,11 +10,11 @@ var jsonfile = require("jsonfile");
 var urlencoded = bodyParser.urlencoded({ extended: false });
 
 app.get("/ping", (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3001");
   return res.send("chandani");
 });
 app.post("/location", urlencoded, (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3001");
   var location = req.body.location;
   console.log("location: " + location);
 

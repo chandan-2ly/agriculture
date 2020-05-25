@@ -13,8 +13,7 @@ import {
 import styles from "./Cards.module.css";
 import cx from "classnames";
 import Modal from "../ModalComponent/Modal";
-import { csv } from "d3";
-import csvFile from "../../cropData.csv";
+import axios from "axios";
 
 const useStyles = makeStyles({
   root: {
@@ -25,28 +24,41 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Cards({data,city}) {
+export default function Cards({ data, city }) {
   const classes = useStyles();
 
   const [openDialog, setOpenDialog] = useState(false);
-  const [csvData, setCsvData] = useState();
+  const [graphData, setGraphData] = useState();
+  const [formatedData, setFormatedData] = useState();
 
-
-  // const dataList = String(Object.values(data));
-  // console.log("data",data,dataList)
   const cropList = data.substring(0, data.length - 1).split(",");
-  // console.log(cropList);
 
-  useEffect(() => {
-    // fetchLocationData();
-    csv(csvFile).then((data) => {
-      setCsvData(data);
-    });
-  }, []);
+  const fetchGraphData = async (crop) => {
+    try {
+      await axios({
+        method: "get",
+        url: `http://localhost:3000/${city}?crop=${crop}`,
+      }).then((result) => {
+        var res = [];
+        result.data.map((x, index) => {
+          res.push(["Year", "Yield"]);
+
+          x.data.map((y, i) => {
+            for (var j = 0; j < y.Year.length; j++)
+              res.push([y.Year[j], y.value[j]]);
+          });
+        });
+        setGraphData(res);
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const handleOpenDialog = (crop) => {
+    fetchGraphData(crop);
     setOpenDialog(true);
-    console.log("crop",crop,city)
+    console.log("crop", crop, city);
   };
 
   return (
@@ -74,7 +86,7 @@ export default function Cards({data,city}) {
                         color="primary"
                         onClick={() => handleOpenDialog(crop)}
                       >
-                        Share
+                        Graph
                       </Button>
                     </CardActions>
                   </Card>
@@ -83,13 +95,16 @@ export default function Cards({data,city}) {
           </Grid>
         </Grid>
       </Grid>
-      {openDialog && 
-      <Modal
-        open={openDialog}
-        handleClose={() => setOpenDialog(false)}
-        csvData={csvData}
-      />
-}
+      {openDialog && (
+        <Modal
+          open={openDialog}
+          handleClose={() => {
+            setOpenDialog(false);
+            setGraphData([]);
+          }}
+          graphData={graphData}
+        />
+      )}
     </div>
   );
 }
