@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   makeStyles,
   Card,
@@ -12,6 +12,9 @@ import {
 } from "@material-ui/core";
 import styles from "./Cards.module.css";
 import cx from "classnames";
+import Modal from "../ModalComponent/Modal";
+import { csv } from "d3";
+import csvFile from "../../cropData.csv";
 
 const useStyles = makeStyles({
   root: {
@@ -21,11 +24,30 @@ const useStyles = makeStyles({
     height: 200,
   },
 });
-export default function Cards(data) {
+
+export default function Cards({data,city}) {
   const classes = useStyles();
-  const dataList = String(Object.values(data));
-  const cropList = dataList.substring(0, dataList.length - 1).split(",");
-  console.log(cropList);
+
+  const [openDialog, setOpenDialog] = useState(false);
+  const [csvData, setCsvData] = useState();
+
+
+  // const dataList = String(Object.values(data));
+  // console.log("data",data,dataList)
+  const cropList = data.substring(0, data.length - 1).split(",");
+  // console.log(cropList);
+
+  useEffect(() => {
+    // fetchLocationData();
+    csv(csvFile).then((data) => {
+      setCsvData(data);
+    });
+  }, []);
+
+  const handleOpenDialog = (crop) => {
+    setOpenDialog(true);
+    console.log("crop",crop,city)
+  };
 
   return (
     <div className={styles.container}>
@@ -35,7 +57,7 @@ export default function Cards(data) {
             {cropList &&
               cropList.map((crop) => (
                 <Grid item xs={12} md={6}>
-                  <Card className={cx(styles.card)}>
+                  <Card className={styles.card}>
                     <CardActionArea>
                       <CardContent>
                         <CardMedia
@@ -47,7 +69,11 @@ export default function Cards(data) {
                       </CardContent>
                     </CardActionArea>
                     <CardActions>
-                      <Button size="small" color="primary">
+                      <Button
+                        size="small"
+                        color="primary"
+                        onClick={() => handleOpenDialog(crop)}
+                      >
                         Share
                       </Button>
                     </CardActions>
@@ -57,6 +83,13 @@ export default function Cards(data) {
           </Grid>
         </Grid>
       </Grid>
+      {openDialog && 
+      <Modal
+        open={openDialog}
+        handleClose={() => setOpenDialog(false)}
+        csvData={csvData}
+      />
+}
     </div>
   );
 }
