@@ -14,6 +14,7 @@ import styles from "./Cards.module.css";
 import cx from "classnames";
 import Modal from "../ModalComponent/Modal";
 import axios from "axios";
+import regression from "regression";
 
 const useStyles = makeStyles({
   root: {
@@ -29,7 +30,8 @@ export default function Cards({ data, city }) {
 
   const [openDialog, setOpenDialog] = useState(false);
   const [graphData, setGraphData] = useState();
-  const [formatedData, setFormatedData] = useState();
+  const [predictData, setPredictData] = useState();
+  const [cropName, setCropName] = useState();
 
   const cropList = data.substring(0, data.length - 1).split(",");
 
@@ -40,15 +42,29 @@ export default function Cards({ data, city }) {
         url: `http://localhost:3000/${city}?crop=${crop}`,
       }).then((result) => {
         var res = [];
+        var predictData = [];
         result.data.map((x, index) => {
           res.push(["Year", "Yield"]);
+          console.log("result if push", res);
 
           x.data.map((y, i) => {
-            for (var j = 0; j < y.Year.length; j++)
+            for (var j = 0; j < y.Year.length; j++) {
               res.push([y.Year[j], y.value[j]]);
+              predictData.push([y.Year[j], y.value[j]]);
+            }
           });
         });
         setGraphData(res);
+        const predictResult = regression.linear(predictData, {
+          order: 2,
+          precision: 2,
+        });
+        // const gradient = predictResult.equation[0];
+        // const yIntercept = predictResult.equation[1];
+        const prediction = predictResult.predict(2020);
+        // const totalY = gradient * 2020 + yIntercept;
+        console.log("Prediction value", prediction[1]);
+        setPredictData(prediction[1]);
       });
     } catch (error) {
       console.log(error);
@@ -57,6 +73,7 @@ export default function Cards({ data, city }) {
 
   const handleOpenDialog = (crop) => {
     fetchGraphData(crop);
+    setCropName(crop);
     setOpenDialog(true);
     console.log("crop", crop, city);
   };
@@ -86,7 +103,7 @@ export default function Cards({ data, city }) {
                         color="primary"
                         onClick={() => handleOpenDialog(crop)}
                       >
-                        Graph
+                        {"Graph"}
                       </Button>
                     </CardActions>
                   </Card>
@@ -100,9 +117,11 @@ export default function Cards({ data, city }) {
           open={openDialog}
           handleClose={() => {
             setOpenDialog(false);
-            setGraphData([]);
+            setGraphData();
           }}
           graphData={graphData}
+          cropName={cropName}
+          predictData={predictData}
         />
       )}
     </div>

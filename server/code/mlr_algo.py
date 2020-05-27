@@ -260,18 +260,6 @@ def partition(crop_name, crop_Y_pred, start, end):
     return right
 #-----------------------------------------------------------------------------#
 
-    '''reader = csv.DictReader(open('metasort.csv', 'r'))
-    result = sorted(reader, key=lambda d: float(d['Production']),reverse=True)
-    writer = csv.DictWriter(open('output.csv', 'w'), reader.fieldnames)
-    writer.writeheader()
-    writer.writerows(result)   
-    import json
-    jsonfile=open('sort.json','w')
-    jsonfile.write(json.dumps(list(csv.reader(open('output.csv')))))
-    os.remove('metacrops.csv')
-    os.remove('metacrops11.csv')
-'''
-
 
 #-----------------------conv crop list to string------------------------------#
 def ListtoStr(sorted_crop):
@@ -300,8 +288,5 @@ if __name__ == '__main__':
     final_crop = ListtoStr(sorted_crop)
     print(final_crop)
 
-#-----------------------------------------------------------------------------#
-#-----------------------------------------------------------------------------#
+
 #-----------------------------------end---------------------------------------#
-#-----------------------------------------------------------------------------#
-#-----------------------------------------------------------------------------#

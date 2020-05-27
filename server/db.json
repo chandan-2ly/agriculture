@@ -18,7 +18,73 @@
       "data": [
         {
           "legends": "Yield",
-          "Year": [1992, 1993],
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "crop": "Guar seed",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "crop": "Bottle Gourd",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "crop": "Bean",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "crop": "Orange",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "crop": "Lentil",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "crop": "Groundnut",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
           "value": [100, 200]
         }
       ]
@@ -31,8 +97,8 @@
       "data": [
         {
           "legends": "Yield",
-          "Year": [1992, 1993],
-          "value": [100, 200]
+          "Year": ["1990", "1991", "1992", "1993"],
+          "value": [20, 40, 5, 60]
         }
       ]
     },
@@ -43,6 +109,94 @@
         {
           "legends": "Yield",
           "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "crop": "Garlic",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "crop": "Orange",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "crop": "Brinjal",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "crop": "Raddish",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "crop": "Bottle Gourd",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "crop": "Wheat",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "crop": "Sannhamp",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "crop": "Jowar",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
           "value": [100, 200]
         }
       ]
@@ -51,7 +205,7 @@
   "Bhatinda": [
     {
       "id": 1,
-      "crop": "Potato",
+      "crop": "Drum Stick",
       "data": [
         {
           "legends": "Yield",
@@ -62,11 +216,77 @@
     },
     {
       "id": 2,
-      "crop": "Barley",
+      "crop": "Cauliflower",
       "data": [
         {
           "legends": "Yield",
           "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "crop": "Bottle Gourd",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "crop": "Orange",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "crop": "Gour seed",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "crop": "Lentil",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "crop": "Bean",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
           "value": [100, 200]
         }
       ]
@@ -75,7 +295,7 @@
   "Coimbatore": [
     {
       "id": 1,
-      "crop": "Potato",
+      "crop": "Jute",
       "data": [
         {
           "legends": "Yield",
@@ -86,11 +306,99 @@
     },
     {
       "id": 2,
-      "crop": "Barley",
+      "crop": "Cardamom",
       "data": [
         {
           "legends": "Yield",
           "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "crop": "Cauliflower",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "crop": "Drum Stick",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "crop": "Carrot",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "crop": "Bottle Gourd",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "crop": "Barley",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "crop": "Guar seed",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "crop": "Orange",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "crop": "Bean",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
           "value": [100, 200]
         }
       ]
@@ -110,11 +418,99 @@
     },
     {
       "id": 2,
-      "crop": "Barley",
+      "crop": "Wheat",
       "data": [
         {
           "legends": "Yield",
           "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "crop": "Brinjal",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "crop": "Bajra",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "crop": "Guar seed",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "crop": "Tapioca",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "crop": "Raddish",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "crop": "Orange",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "crop": "Sweet potato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "crop": "Sunflower",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
           "value": [100, 200]
         }
       ]
@@ -134,11 +530,99 @@
     },
     {
       "id": 2,
-      "crop": "Barley",
+      "crop": "Banana",
       "data": [
         {
           "legends": "Yield",
           "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "crop": "Cotton",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "crop": "Wheat",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "crop": "Raddish",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "crop": "Maize",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "crop": "Bottle Gourd",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "crop": "Moong(Green Gram)",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "crop": "Cowpea",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "crop": "Groundnut",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
           "value": [100, 200]
         }
       ]
@@ -166,6 +650,94 @@
           "value": [100, 200]
         }
       ]
+    },
+    {
+      "id": 3,
+      "crop": "Guar seed",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "crop": "Orange",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "crop": "Bajra",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "crop": "Garlic",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "crop": "Bottle Gourd",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "crop": "Raddish",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "crop": "Sunflower",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "crop": "Jowar",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
     }
   ],
   "Jammu": [
@@ -187,6 +759,94 @@
         {
           "legends": "Yield",
           "Year": [1992, 1993],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "crop": "Jute",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "crop": "Cardamom",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "crop": "Cauliflower",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "crop": "Guar seed",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "crop": "Tomato",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "crop": "Peas & beans (Pulses)",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "crop": "Orange",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
+          "value": [100, 200]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "crop": "Bottle Gourd",
+      "data": [
+        {
+          "legends": "Yield",
+          "Year": ["1992", "1993"],
           "value": [100, 200]
         }
       ]

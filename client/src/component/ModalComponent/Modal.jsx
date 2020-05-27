@@ -10,6 +10,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    height: "100%",
+    width: "100%",
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
@@ -19,21 +21,22 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function TransitionsModal(data) {
+export default function TransitionsModal(props) {
   const classes = useStyles();
-  console.log("props", data.graphData);
+
+  console.log("props", props.graphData);
 
   const dummyData = [
     ["Year", "Yeild"],
-    ["2014", 1000],
-    ["2015", 1170],
-    ["2016", 660],
-    ["2017", 1030],
+    ["1992", 100],
+    ["1993", 200],
+    ["2016", 60],
+    ["2017", 90],
   ];
-  console.log(data);
+  console.log("Data", props);
 
   const handleClose = () => {
-    data.handleClose();
+    props.handleClose();
   };
 
   return (
@@ -42,7 +45,7 @@ export default function TransitionsModal(data) {
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         className={classes.modal}
-        open={data.open}
+        open={props.open}
         onClose={handleClose}
         closeAfterTransition
         BackdropComponent={Backdrop}
@@ -50,19 +53,20 @@ export default function TransitionsModal(data) {
           timeout: 500,
         }}
       >
-        <Fade in={data.open}>
+        <Fade in={props.open}>
           <Chart
             width={"500px"}
             height={"300px"}
-            chartType="Bar"
+            chartType="Line"
             loader={<div>Loading Chart</div>}
-            data={data.graphData}
+            data={props.graphData}
             options={{
               // Material design options
               chart: {
-                title: "Crop historic data",
-                subtitle: "",
+                title: "Historic Data for " + props.cropName,
+                subtitle: "Predicted Value is " + props.predictData,
               },
+              vAxis: "Yield(Tonnes/Hectare)",
             }}
           />
         </Fade>
